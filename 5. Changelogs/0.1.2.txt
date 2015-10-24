@@ -1,0 +1,9 @@
+A3XAI 0.1.2
+
+Files changed
+A3EAI.pbo update required: Yes
+A3EAI_config.sqf update required: Required for 0.1.0 users
+Headless Client Files/Keys update required: N/A
+A3EAI Client Addon update required: No
+
+[Fixed] Relocation for stuck infantry units did not check for nearby players.

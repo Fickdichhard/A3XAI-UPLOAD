@@ -1,0 +1,18 @@
+A3XAI 0.2.1
+
+Files changed:
+A3XAI.pbo update required: Yes
+A3XAI_config.pbo update required: No, last changed: 0.2.0
+Headless Client Files/Keys update required: Yes
+A3XAI Client Addon update required: No
+
+IMPORTANT: If you already have A3XAI installed (before version 0.2.0), you must remove all A3XAI files from @ExileServer.
+
+[Changed] AI infantry and land vehicles now have a smaller minimum distance from trader zones before no-hostility/no-damage is triggered (Before: 900m. After: 500m)
+[Changed] UGVs no longer take wheel damage, and no longer self-repair. This is a temporary change.
+[Added] No hostility/no-damage will also be triggered for all AI if their current target is within 300m of a safezone.
+[Fixed] Fixed bug where UAVs and UGVs could have their detection loop activated multiple times per waypoint.
+[Fixed] Fixed bug where AI NVGs were always removed on death. Classname used for temporary NVGs is now NVGoggles_OPFOR.
+[Removed] Disabled patrol radius enforcement for AI infantry due to some issues.
+[Removed] Removed staticBlacklistLocations config option. Standard blacklist areas now cancel out nearby static spawns if at least one spawn position within 250m of the location is within a blacklisted area.
+[Added] Additional error-checking for AI vehicle definitions

@@ -1,0 +1,7 @@
+Important: For test builds, always update all components of A3XAI used by your server
+
+- "Remote area" category AI amounts changed from 1 min/2 max to 1 min/3 max.
+- Antistuck function will now trigger for AI even if enemies within range, if AI group is within a "no aggro" zone.
+- Lower fly-in height for AI air reinforcements.
+- AI land vehicle groups that have abandoned their vehicles within a "no aggro" zone will move to the nearest acceptable area to patrol. If no acceptable area is found, units and vehicle will be deleted.
+- Expanded "no aggro" zones around trader areas from 650m to 700m.

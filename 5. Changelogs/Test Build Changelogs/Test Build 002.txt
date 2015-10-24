@@ -1,0 +1,17 @@
+Important: For test builds, always update all components of A3XAI used by your server
+
+- Added price limit for items generated using Exile loot tables. Items with price beyond this limit will be ignored (currently: code lock and safe are ignored with the default limit)
+- Each component of dynamic classname system now has its own blacklist array
+- Added option to disable collision damage to AI units by players (A3XAI_noCollisionDamage)
+- Added setting to define amount of time abandoned AI vehicles remain ingame before being cleaned up (A3XAI_vehicleDespawnTime)
+- Added setting to allow abandoned AI vehicles to be used by players (A3XAI_vehiclesAllowedForPlayers). Once a player enters a previously AI-owned vehicle, it will not be cleaned up unless destroyed. These vehicles will not persist after server restart.
+- Increased default UAV/UGV detection chance from 50% to 80%
+- Fixed AI loot searching (was previously searching for weapon holder type used by Epoch)
+- AI radio messages now show up for players if at least one group member has a Radio (instead of sharing with vehicle crew)
+- Greatly reduced nearest enemy check for AI vehicles to allow anti-stuck function to work as intended
+- AI under "no aggro" state now revert to "aggro possible" state if one group member has been killed
+- Player killer hunting behavior now only activates if group is under "aggro possible" state
+- Reworked A3XAI cleanup to only monitor units and objects that it has spawned, instead of all units/objects.
+- AI no longer get deleted if abandoning their vehicle within a no-aggro zone (Looking for potential consequences)
+- All AI equipment is now assigned according to their level (higher level = higher tendency to be assigned higher level equipment)
+

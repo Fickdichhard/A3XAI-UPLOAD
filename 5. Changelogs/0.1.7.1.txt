@@ -1,0 +1,9 @@
+A3XAI 0.1.7
+
+Files changed
+A3EAI.pbo update required: Yes
+A3EAI_config.sqf update required: No, Last changed in 0.1.5
+Headless Client Files/Keys update required: N/A, Strongly recommended to only use HC after Arma 3 1.52 update
+A3EAI Client Addon update required: No
+
+[Fixed] Fixed error with Dynamic AI if target player logged out during pursuit stage.

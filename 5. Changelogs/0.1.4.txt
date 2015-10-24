@@ -1,0 +1,12 @@
+A3XAI 0.1.4
+
+Files changed
+A3EAI.pbo update required: Yes
+A3EAI_config.sqf update required: Yes
+Headless Client Files/Keys update required: N/A
+A3EAI Client Addon update required: No
+
+[Fixed] Fixed some documentation typos in A3EAI_config.sqf
+[Fixed] Autonomous vehicles (UAVs/UGVs) should no longer be unlocked once disabled.
+[Fixed] Fixed a startup error with HC.
+[Added] A3XAI will now take back ownership of groups taken by other addons.

@@ -1,0 +1,12 @@
+A3XAI 0.1.7
+
+Files changed
+A3EAI.pbo update required: Yes
+A3EAI_config.sqf update required: No, Last changed in 0.1.5
+Headless Client Files/Keys update required: N/A, Strongly recommended to only use HC after Arma 3 1.52 update
+A3EAI Client Addon update required: No
+
+[Fixed] Fixed some errors related to defining of patrol radius for random spawns and vehicle groups.
+[Changed] Increased AI spawning blacklist area around trader zones from 800m to 1000m.
+[Changed] If no Exile trader markers are found, A3XAI will now also attempt to find the safezone triggers to auto-detect trader zones before resorting to manually defined locations.
+[Changed] Some minor tidy-up of AI damage handlers.

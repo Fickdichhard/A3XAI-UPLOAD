@@ -1,0 +1,5 @@
+Important: For test builds, always update all components of A3XAI used by your server
+
+- Fixed AI collision damage immunity
+- Fixed AI gear purge on lethal collision damage
+- Collision damage immunity now enabled by default

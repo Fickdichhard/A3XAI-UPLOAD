@@ -1,0 +1,6 @@
+Important: For test builds, always update all components of A3XAI used by your server
+
+- Updated client addon to remove death message options (since client addon is no longer used for death messages).
+- Fixed bug where legit kills were counted as collision kills and vice-versa.
+- Fix for respect/money being cleared from vehicle kills. (Credits: Hangender: http://www.exilemod.com/topic/1082-temp-fix-vehicle-weapon-poptabrespect-glitch-fix/?do=findComment&comment=7034)
+- Fix bug where death messages were still being shared with player's vehicle crew instead of group units.

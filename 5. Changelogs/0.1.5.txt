@@ -1,0 +1,55 @@
+A3XAI 0.1.5
+
+Files changed
+A3EAI.pbo update required: Yes
+A3EAI_config.sqf update required: Yes
+Headless Client Files/Keys update required: N/A, Strongly recommended to only use HC after Arma 3 1.52 update
+A3EAI Client Addon update required: No
+
+[Changed] Moved A3XAI_deathMessages to "Shared AI Unit Settings" section since AI death messages no longer use the Client Addon.
+[Changed] Infantry AI patrol are now restricted to their defined patrol radius, with a 50m buffer zone.
+[Changed] Infantry AI patrol now become non-hostile and damage-immune upon traveling near trader zones (same behavior as AI vehicle patrols).
+[Changed] Re-standardized minimum spawn distances for all AI types. See end of changelog for more information.
+[Changed] Improved classname verification script.
+[Added] Added A3XAI_traderAreaLocations array in config file for admins to manually define trader areas. See end of changelog for more info on this setting.
+[Removed] Removed A3XAI_chanceFoodLoot and A3XAI_chanceMiscLoot settings. AI will now always generate the maximum allowed amount of loot given enough time.
+[Removed] Extra ammunition loot due to avoid confusion. Ammo loot is substitued with Flares and Smokes items.
+[Fixed] Added MPKilled eventhandler to AI vehicles recovered by players to allow proper cleanup of destroyed recovered vehicles.
+[Fixed] HC-controlled AI vehicles are now properly released for player access.
+
+
+More info on A3XAI_traderAreaLocations:
+
+Expected format: Array of positions (2D or 3D)
+Example (Correct):
+
+	A3XAI_traderAreaLocations = [[14600,16797.2,0],[23334.6,24188.9,0],[2998.06,18175.5,0]];
+
+Example (Incorrect):
+	
+	A3XAI_traderAreaLocations = [14600,16797.2,0]; //Not an array of positions
+	A3XAI_traderAreaLocations = [[14600,16797.2,0],[23334.6,24188.9,0],[2998.06,18175.5,0],]; //Should be no comma after the last array
+
+For performance reasons, limit use of this array to actual trader positions (Recommended maximum: 3-5 positions). This is because every spawned group checks whether they are within any of these areas every ~15 seconds.
+
+For each defined position, an 900m radius "no aggro" zone is created where all AI that enter will become non-hostile and immune to damage. An 800m spawning blacklist will also be created where no AI can spawn.
+
+Because positions are checked every ~15 seconds, there may be a small time window between the time the AI group enters the 900m zone and actually becoming non-hostile.
+
+Note: If custom spawns are created within these zones, they will still spawn but will never become hostile or vulnerable to damage as long as they are within the "no aggro" zone.
+	
+Note: This array will only be read if no standard Exile trader markers are found. This is intended by design.
+
+More info on re-standardized minimum spawn distances:
+
+Minimum spawn distances between AI and players were all standardized and increased to prevent cases where AI spawn too close to players.
+
+Static spawns (Standard and Custom):
+
+Minimum distance between AI and any player (with LOS): 300m (Previously 200m).
+Minimum distance between AI and any player (without LOS): 200m (Previously 125m, 30m for respawns and custom spawns).
+
+Dynamic and Random spawns:
+
+Minimum distance between AI and any player (with LOS): 400m (Previously 200m)
+Minimum distance between AI and any player (without LOS): 300m (Previously 145m)

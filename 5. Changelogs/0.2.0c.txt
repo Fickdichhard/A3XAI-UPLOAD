@@ -1,0 +1,14 @@
+A3XAI 0.2.0c
+
+Files changed:
+A3XAI.pbo update required: Yes
+A3XAI_config.pbo update required: No, last changed: 0.2.0
+Headless Client Files/Keys update required: Yes
+A3XAI Client Addon update required: No
+
+IMPORTANT: If you already have A3XAI installed (before version 0.2.0), you must remove all A3XAI files from @ExileServer.
+
+[Changed] No-aggro area check for AI vehicle groups is now based on position of the AI group leader and not the group's vehicle.
+[Changed] AI group no-aggro status is now synced once upon ownership change between server and HC.
+[Changed] Changed case of A3XAI filenames to lower case for Linux compatibility.
+[Fixed] Fixed scripting error with AI vehicle MPKilled eventhandler.

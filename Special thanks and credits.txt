@@ -1,0 +1,15 @@
+Listed in absolutely no particular order:
+
+1. Prerelease Build Test Volunteers:
+Darth Rogue
+Dirty Sanchez
+Tobias Solem
+Dobrowney
+Skare
+
+2. Other works used:
+BIN_taskPatrol: BIS, Binesi, Wolffy.au
+SHK_Pos: Shuko
+Code excerpts used to support Exile features: Exile Mod devs @ http://www.exilemod.com/
+
+If you have contributed your effort or works towards development of A3XAI and were not credited, please notify me ASAP. Username on Exile mod forums: http://www.exilemod.com/profile/66-face/

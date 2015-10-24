@@ -1,0 +1,8 @@
+Important: For test builds, always update all components of A3XAI used by your server
+
+- Waypoints for infantry AI now avoid no-aggro zones.
+- AI under "no-aggro" status are now immune from damage.
+- Air reinforcement vehicles can now be recovered by players if A3XAI_releaseVehicleAllow is enabled.
+- Fixed bug where AI vehicles would not be cleaned up if A3XAI_releaseVehicleAllow was enabled and player-claim timer expires.
+- Added missing function to calculate alternate patrol position for vehicle AI that abandon their vehicle within a no-aggro zone.
+- Increased no-aggro area radius around trader areas from 700m to 900m, spawning blacklist radius from 600m to 800m.

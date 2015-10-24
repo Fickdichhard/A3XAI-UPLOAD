@@ -1,0 +1,4 @@
+Important: For test builds, always update all components of A3XAI used by your server
+
+[Fixed] Issue introduced in Arma 3 1.50 that caused some legitimate AI kills to be incorrectly detected as collision kills.
+[Changed] Vehicle waypoint blacklists no longer cause vehicle AI to become non-hostile.

@@ -1,0 +1,11 @@
+A3XAI 0.1.7.2
+
+Files changed
+A3EAI.pbo update required: Yes
+A3EAI_config.sqf update required: N/A, Config files are inside the A3XAI.pbo in this version.
+Headless Client Files/Keys update required: N/A Headless client currently not functional.
+A3EAI Client Addon update required: No
+
+Note: The above requirements assume you are upgrading between each released version. If you have skipped any versions, it is highly recommended to update all installed parts.
+
+[Fixed] Temporary fix for issues caused by Arma 3 1.52 update. Note that config files are inside the A3XAI.pbo in this version.

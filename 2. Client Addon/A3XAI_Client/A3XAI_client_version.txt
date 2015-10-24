@@ -1,0 +1,6 @@
+/*
+	A3XAI Version Identifier File
+*/
+
+#define A3XAI_CLIENT_TYPE "A3XAI Client Addon"
+#define A3XAI_CLIENT_VERSION "0.0.0"

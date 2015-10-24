@@ -1,0 +1,11 @@
+A3XAI 0.1.3
+
+Files changed
+A3EAI.pbo update required: Yes
+A3EAI_config.sqf update required: Yes
+Headless Client Files/Keys update required: N/A
+A3EAI Client Addon update required: No
+
+[Fixed] Fixed bug with manual weapon definitions.
+[Changed] Bambi overalls no longer used as a possible uniform choice by A3XAI. 
+[Changed] Removal of A3XAI_addUniformChance0-3 settings from A3XAI_config.sqf.

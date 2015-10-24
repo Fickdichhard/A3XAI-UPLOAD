@@ -1,0 +1,11 @@
+A3XAI 0.2.0a
+
+Files changed:
+A3XAI.pbo update required: Yes
+A3XAI_config.pbo update required: No, last changed: 0.2.0
+Headless Client Files/Keys update required: No
+A3XAI Client Addon update required: No
+
+IMPORTANT: If you already have A3XAI installed (before version 0.2.0), you must remove all A3XAI files from @ExileServer.
+
+[Fixed] Corrected wrong array reference for weaponOpticsList.

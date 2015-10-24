@@ -1,0 +1,12 @@
+A3XAI 0.1.1 
+
+Files changed
+A3EAI.pbo update required: Yes
+A3EAI_config.sqf update required: Yes
+Headless Client Files/Keys update required: N/A
+A3EAI Client Addon update required: No
+
+[Added] Added option to define side (faction) used for units spawned by A3XAI.
+[Fixed] Group functions for custom AI were missing.
+[Fixed] Collision kill is now properly communicated from HC to dedicated server.
+[Fixed] No-hostility status did not apply damage immunity to AI units.

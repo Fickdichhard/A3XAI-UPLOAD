@@ -1,0 +1,3 @@
+Important: For test builds, always update all components of A3XAI used by your server
+
+- Fixed bug where "no aggro" mode was stuck on until next AI waypoint was reached.

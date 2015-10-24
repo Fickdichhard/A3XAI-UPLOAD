@@ -1,0 +1,5 @@
+Important: For test builds, always update all components of A3XAI used by your server
+
+- Further fixes for heli damage handler
+- Fixes for Exile-style kill feed
+- Death message notifications now use Exile's messaging system (Client addon no longer required for death messages)

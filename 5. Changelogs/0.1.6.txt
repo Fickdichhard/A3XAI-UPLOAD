@@ -1,0 +1,22 @@
+A3XAI 0.1.6
+
+Files changed
+A3EAI.pbo update required: Yes
+A3EAI_config.sqf update required: No, Last changed in 0.1.5
+Headless Client Files/Keys update required: N/A, Strongly recommended to only use HC after Arma 3 1.52 update
+A3EAI Client Addon update required: No
+
+[Fixed] Static AI loot/player searching range now properly restricted to patrol area.
+[Fixed] UAVs/UGVs under Detect Only status no longer become hostile within "no aggro" zones if hit by players.
+[Fixed] AI units/vehicles under "no aggro" status no longer have their health reset to full upon taking damage.
+[Fixed] AI vehicle gunner limit was not being applied properly. (Can now have zero gunners).
+[Fixed] Fixed issue with custom spawns that failed to spawn AI due to player proximity.
+[Fixed] Fixed error that occured when A3XAI attempted to find an alternate patrol area for AI vehicle groups disabled within a no-aggro zone.
+[Fixed] Fixed bug where AI vehicles recovered by players were cleaned up by A3XAI.
+[Fixed] Fixed bug where location-based spawn chances were not being applied to dynamic spawns properly.
+[Fixed] Fixed bug where AI took unusually large amounts of damage to kill.
+[Changed] AI unit/vehicle HandleDamage eventhandlers now only trigger if damage values actually increase per hit taken.
+[Changed] AI spawned by A3XAI can now be damaged by non-players as long as attacker does not belong to the same side as the victim.
+[Changed] Custom static spawns have reduced spawn distance requirements to reduce cases where spawns are canceled due to player proximity (200m from any player with LOS, 100m from any player without LOS).
+[Added] All infantry AI spawns now have a "last second check" for players too close to AI spawn position.
+[Added] Added small damage threshold requirement to allow UAVs/UGVs to return fire while under Detect Only status.

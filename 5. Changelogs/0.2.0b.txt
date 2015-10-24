@@ -1,0 +1,13 @@
+A3XAI 0.2.0b
+
+Files changed:
+A3XAI.pbo update required: Yes
+A3XAI_config.pbo update required: No, last changed: 0.2.0
+Headless Client Files/Keys update required: Yes
+A3XAI Client Addon update required: No
+
+IMPORTANT: If you already have A3XAI installed (before version 0.2.0), you must remove all A3XAI files from @ExileServer.
+
+[Fixed] Fixed scripting error with A3XAI_vehCrewRegroup.sqf.
+[Fixed] AI hostile status is now properly synchronized between server and HC. (Important for HC users!)
+[Changed] Vehicle anti-stuck no longer attempts to unflip vehicles.

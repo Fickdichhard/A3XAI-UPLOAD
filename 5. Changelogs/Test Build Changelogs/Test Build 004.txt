@@ -1,0 +1,10 @@
+Important: For test builds, always update all components of A3XAI used by your server
+
+- Loot/player/vehicle searching area for infantry AI now confined within patrol radius.
+- Dynamic/Random AI player-pursuing stops if target player is inside a blacklisted area.
+- A3XAI will now attempt to unflip "flipped" vehicles (may not work incredibly well).
+- Infantry AI that stray into an area designated as "no aggro" will be ordered to move towards their spawn area center.
+- Fixed no aggro zones for vehicle AI.
+- Maximum patrol radius set to 300m for infantry AI (no limit previously).
+- Increased no-aggro area radius for trader areas from 600m to 650m.
+- Reduced static/dynamic/random spawn radius for trader areas from 800m to 600m.

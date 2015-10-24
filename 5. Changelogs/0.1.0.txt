@@ -1,0 +1,16 @@
+A3XAI 0.1.0 (Initial public release build)
+
+Note: This changelog is relevant only to Test Build users.
+
+Files changed
+A3EAI.pbo update required: Yes
+A3EAI_config.sqf update required: Yes
+Headless Client Files/Keys update required: Yes
+A3EAI Client Addon update required: No
+
+- Fixed documentation errors in A3XAI_config.sqf
+- Removed Mad Passenger respect rewards
+- Added new Respect bonus type ("Vehicle Weapon Kill") to reward AI kills using vehicle weapons (Default: +400 Respect)
+- Removed Code Lock and Safe Kit from default AI loot tables
+- AI from custom spawns created within blacklisted areas are now exempted from effects of blacklisted areas
+- Added several missing default settings to list of verified settings.

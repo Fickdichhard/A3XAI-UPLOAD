@@ -1,0 +1,7 @@
+7 compile !"call compile preprocessFileLineNumbers \"A3XAI_Client\A3XAI_client_config.sqf\""
+7 Exile_unit_player !"waitUntil {uiSleep 1; (typeOf player) isEqualTo \"Exile_Unit_Player\"};"
+7 eventHandler !"\"A3XAI_SMS\" addPublicVariableEventHandler {(_this select 1) call A3XAI_client_radioMessage; diag_log _this;};"
+
+If using infistar, add this one as well:
+
+7 addpublicvariableeventhandler !"\"A3XAI_SMS\" addPublicVariableEventHandler {(_this select 1) call A3XAI_client_radioMessage; diag_log _this;};" 

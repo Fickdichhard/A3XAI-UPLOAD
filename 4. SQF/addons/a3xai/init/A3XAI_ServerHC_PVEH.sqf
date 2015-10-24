@@ -1,0 +1,25 @@
+"A3XAI_respawnGroup_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_addRespawnQueue;diag_log format ["Debug: %1",_this];};
+"A3XAI_sendKillResponse_PVS" addPublicVariableEventHandler {(_this select 1) spawn A3XAI_sendKillResponse;diag_log format ["Debug: %1",_this];};
+"A3XAI_despawnRandomGroup_PVS" addPublicVariableEventHandler {private ["_trigger"];_trigger = (_this select 1) getVariable ["trigger",objNull];[_trigger,true] spawn A3XAI_despawn_random;diag_log format ["Debug: %1",_this];};
+"A3XAI_despawnDynamicGroup_PVS" addPublicVariableEventHandler {private ["_trigger"];_trigger = (_this select 1) getVariable ["trigger",objNull];[_trigger,true] spawn A3XAI_despawn_dynamic;diag_log format ["Debug: %1",_this];};
+"A3XAI_respawnVehicle_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_respawnAIVehicle;diag_log format ["Debug: %1",_this];};
+"A3XAI_addVehicleGroup_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_addVehicleGroup;diag_log format ["Debug: %1",_this];};
+"A3XAI_addParaGroup_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_addParaGroup;diag_log format ["Debug: %1",_this];};
+"A3XAI_transferGroup_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_HCGroupToServer;diag_log format ["Debug: %1",_this];};
+"A3XAI_SMS_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_radioSend;diag_log format ["Debug: %1",_this];};
+"A3XAI_getGroupTriggerVars_PVS" addPublicVariableEventHandler {(_this select 1) spawn A3XAI_getGroupTriggerVars;diag_log format ["Debug: %1",_this];};
+"A3XAI_registerDeath_PVS" addPublicVariableEventHandler {(_this select 1) spawn A3XAI_registerDeath;diag_log format ["Debug: %1",_this];};
+"A3XAI_updateGroupLoot_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_updateGroupLootPool;diag_log format ["Debug: %1",_this];};
+"A3XAI_protectGroup_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_protectRemoteGroup;diag_log format ["Debug: %1",_this];};
+"A3XAI_updateGroupSize_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_updateGroupSizeServer;diag_log format ["Debug: %1",_this];};
+"A3XAI_HCLogin_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_HCListener;diag_log format ["Debug: %1",_this];};
+"A3XAI_updateReinforcePlaces_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_updateReinforcePlaces;diag_log format ["Debug: %1",_this];};
+"A3XAI_setPermaDeleteSpawn_PVS" addPublicVariableEventHandler {private ["_trigger"];_trigger = (_this select 1) getVariable ["trigger",objNull];_trigger setVariable ["permadelete",true];diag_log format ["Debug: %1",_this];};
+"A3XAI_deleteCustomSpawn_PVS" addPublicVariableEventHandler {(_this select 1) spawn A3XAI_deleteCustomSpawn;diag_log format ["Debug: %1",_this];};
+"A3XAI_setDriverUnit_PVS" addPublicVariableEventHandler {(_this select 1) setVariable ["isDriver",true];diag_log format ["Debug: %1",_this];};
+"A3XAI_setVehicleRegrouped_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_setVehicleRegrouped;diag_log format ["Debug: %1",_this];};
+"A3XAI_spawnReinforcements_PVS" addPublicVariableEventHandler {(_this select 1) spawn A3XAI_spawn_reinforcement;diag_log format ["Debug: %1",_this];};
+"A3XAI_setBehavior_PVS" addPublicVariableEventHandler {(_this select 1) call A3XAI_setBehavior;diag_log format ["Debug: %1",_this];};
+"A3XAI_generateLootOnDeath_PVS" addPublicVariableEventHandler {(_this select 1) spawn A3XAI_generateLootOnDeath;diag_log format ["Debug: %1",_this];};
+
+diag_log "[A3XAI] Serverside PVEHs loaded.";
